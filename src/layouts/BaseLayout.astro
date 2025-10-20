@@ -1,9 +1,10 @@
 ---
-import Navbar from "../components/navbar.astro"
+import Navbar from "../components/navbar.astro";
 import Footer from "../components/footer.astro";
 const { title = "Astro + Tailwind v4" } = Astro.props;
 ---
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -11,10 +12,12 @@ const { title = "Astro + Tailwind v4" } = Astro.props;
     <title>{title}</title>
     <link rel="stylesheet" href="/tailwind.css" />
   </head>
-  <body class="bg-slate-900 text-white min-h-screen flex-col items-center justify-center">
+  <body
+    class="bg-slate-900 text-white min-h-screen flex-col items-center justify-center"
+  >
     <Navbar />
     <main>
-        <slot />
+      <slot />
     </main>
     <Footer />
   </body>
