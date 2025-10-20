@@ -1,16 +1,10 @@
 ---
-
+import BaseLayout from "../layouts/BaseLayout.astro"
+import Hero from "../components/hero.astro"
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout title="Southern Comfort Total Home Care | Handyman Services">
+	<Hero />
+	<p class="text-slate-300 text-pretty px-3 py-5">Our service area includes: Carroll County, GA · Douglas County, GA · Douglasville, GA · Paulding County, GA · Haralson County, GA · Rockmart, GA · Dallas, GA · Hiram, GA · Polk County, GA · Cedartown, GA</p>
+	<p class="text-pretty px-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque nulla et rem vel, quisquam reiciendis modi asperiores mollitia a, aliquid labore consectetur tenetur? Nulla, vero! Enim vitae illo laborum iusto?</p>
+</BaseLayout>

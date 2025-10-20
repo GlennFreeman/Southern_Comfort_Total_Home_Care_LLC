@@ -1,0 +1,79 @@
+---
+import Image from "astro/components/Image.astro";
+import logojpg from "../media/logojpg.jpg";
+---
+
+<div class="drawer-end fixed w-screen z-10">
+    <input id="link-drawer" type="checkbox" class="drawer-toggle" />
+    <div class="drawer-content flex flex-col">
+        <!-- Navbar -->
+        <nav class="navbar bg-base-300 w-full">
+            <div class="flex-none lg:hidden">
+                <label
+                    for="link-drawer"
+                    aria-label="open sidebar"
+                    class="btn btn-square btn-ghost"
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        class="inline-block h-6 w-6 stroke-current"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </label>
+            </div>
+            <div class="mx-2 flex-1 px-2"><a href="./">Southern Comfort Total Home Care</a></div>
+            <div class="hidden flex-none lg:block">
+                <ul class="menu menu-horizontal">
+                    <!-- Navbar menu content here -->
+                    <li>
+                        <a
+                            ><Image
+                                src={logojpg}
+                                alt="logo"
+                                loading={"eager"}
+                                class="rounded-full object-scale-down h-6 w-6"
+                            /></a>
+                    </li>
+                    <li><a>Services</a></li>
+                    <li><a>Service Area</a></li>
+                    <li><a>About Us</a></li>
+                    <li><a>Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <nav class="drawer-side">
+        <label
+            for="link-drawer"
+            aria-label="close sidebar"
+            class="drawer-overlay"></label>
+        <ul class="menu flex bg-base-200 min-h-full w-60 p-4">
+            <!-- Sidebar content here -->
+            <li>
+                <a
+                    ><Image
+                        src={logojpg}
+                        alt="logo"
+                        loading={"lazy"}
+                        class="rounded-full mb-4"
+                    /></a>
+            </li>
+            <li class="text-slate-300 px-8"><a>Services</a></li>
+            <div class="divider px-6"></div>
+            <li class="text-slate-300 px-8"><a>Service Area</a></li>
+            <div class="divider px-6"></div>
+            <li class="text-slate-300 px-8"><a>About Us</a></li>
+            <div class="divider px-6"></div>
+            <li class="font-bold px-8"><a>Contact Us</a></li>
+        </ul>
+    </nav>
+</div>
+<div class="h-16"></div>

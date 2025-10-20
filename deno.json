@@ -1,0 +1,8 @@
+{
+  "tasks": {
+    "css": "./tailwindcss.exe -i ./src/styles/input.css -o ./public/tailwind.css --watch",
+    "astro:dev": "deno run -A npm:astro dev",
+    "astro:build": "deno run -A npm:astro build",
+    "dev": "deno task css & deno task astro:dev"
+  }
+}

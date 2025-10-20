@@ -1,0 +1,44 @@
+---
+import hero from "../media/hero.jpg";
+---
+
+<div class="hero min-h-screen" style={`background-image: url(${hero.src});`} ;>
+    <div class="hero-overlay"></div>
+    <div class="hero-content text-neutral-content text-center glass rounded-lg">
+        <div
+            class="max-w-md p-4 border-2 border-gray-400 border-dashed rounded-lg"
+        >
+            <h1
+                class="text-6xl font-bold font-serif text-primary drop-shadow-2xl"
+            >
+                Southern Comfort
+            </h1>
+            <h2 class="text-2xl font-sans font-thin italic tracking-widest text-slate-100 mb-3 mt-1">
+                Total Home Care
+            </h2>
+            <p class="text-pretty">
+                Welcome to Southern Comfort Total Home Care. We are here to
+                provide our customers with top notch handyman services,
+                including home repairs, renovation, installation, and building
+                projects. Please let us know how we can help. We look forward to
+                serving you!
+            </p>
+            <button
+                class="btn btn-secondary rounded-full mt-5 mb-3 hover:pb-0.75"
+                >Contact Us</button
+            >
+        </div>
+    </div>
+</div>
+
+<style scoped>
+    .glass {
+        --glass-blur: 4px;
+        --glass-opacity: 15%;
+    }
+    h1 {
+        text-shadow:
+            0 -1px 1px rgba(245, 245, 255, 0.65),
+            0 2px 5px rgba(0, 0, 0, 0.55);
+    }
+</style>
