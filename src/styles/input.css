@@ -3,9 +3,9 @@
 @plugin "daisyui/theme" {
   name: "dark";
   default: true;
-  --color-base-100: oklch(25.33% 0.016 252.42);
-  --color-base-200: oklch(23.26% 0.014 253.1);
-  --color-base-300: oklch(21.15% 0.012 254.09);
+  --color-primary: oklch(0.508 0.202 29.7);
+  --color-secondary: hsl(216.1 100.0% 50.0%);
+  --color-accent: oklch(0.315 0.107 285.8);
   --depth: 1;
   --noise: 1;
 }
