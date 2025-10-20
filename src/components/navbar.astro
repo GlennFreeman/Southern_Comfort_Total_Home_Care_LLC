@@ -3,15 +3,18 @@ import Image from "astro/components/Image.astro";
 import logojpg from "../media/logojpg.jpg";
 ---
 
-<div class="drawer-end fixed w-screen z-10">
+<div class="drawer-end fixed w-full z-10">
     <input id="link-drawer" type="checkbox" class="drawer-toggle" />
     <div class="drawer-content flex flex-col">
         <!-- Navbar -->
-        <nav class="navbar justify-between bg-base-300">
-            <div class="flex">
-                <a href="./" class="font-bold text-balance">Southern Comfort Total Home Care</a>
+        <nav class="navbar justify-between bg-base-300 h-16">
+            <div class="flex ml-2">
+                <a href="./" class="text-balance"
+                    ><span class="font-serif font-bold text-primary">Southern Comfort</span>
+                    <span class="font-sans font-thin text-sm italic">Total Home Care</span></a
+                >
             </div>
-            <div class="flex-shrink lg:hidden">
+            <div class="flex-shrink md:hidden">
                 <label
                     for="link-drawer"
                     aria-label="open sidebar"
@@ -31,14 +34,14 @@ import logojpg from "../media/logojpg.jpg";
                     </svg>
                 </label>
             </div>
-            <div class="hidden flex-shrink lg:flex lg:navbar-end">
+            <div class="hidden flex-shrink md:flex">
                 <ul class="menu menu-horizontal">
                     <!-- Navbar menu content here -->
                     <li>
-                        <a
+                        <a class="tooltip tooltip-bottom" data-tip="Home"
                             ><Image
                                 src={logojpg}
-                                alt="logo"
+                                alt="logo and home link"
                                 loading={"eager"}
                                 class="rounded-full object-scale-down h-6 w-6"
                             /></a
@@ -58,13 +61,13 @@ import logojpg from "../media/logojpg.jpg";
             for="link-drawer"
             aria-label="close sidebar"
             class="drawer-overlay"></label>
-        <ul class="menu flex bg-base-200 min-h-full w-60 p-4">
+        <ul class="menu flex bg-gradient-to-t from-slate-800 to-base-300 min-h-full w-60 p-4">
             <!-- Sidebar content here -->
             <li>
-                <a
+                <a class="tooltip tooltip-bottom" data-tip="Home"
                     ><Image
                         src={logojpg}
-                        alt="logo"
+                        alt="logo and home link"
                         loading={"lazy"}
                         class="rounded-full mb-4"
                     /></a
@@ -75,8 +78,27 @@ import logojpg from "../media/logojpg.jpg";
             <li class="text-slate-300 px-8"><a>Service Area</a></li>
             <li class="text-slate-300 px-8"><a>About Us</a></li>
             <div class="divider px-6"></div>
-            <li class="px-8"><a class="btn btn-secondary rounded-full font-bold px-8 animate-pulse">Contact Us</a></li>
+            <li class="px-8">
+                <a
+                    class="btn btn-secondary rounded-full font-bold px-8 mb-2 animate-pulse hover:pb-0.75 hover:saturate-200 hover:animate-none focus:pb-0.75 focus:saturate-200 focus:animate-none active:saturate-50 active:animate-none"
+                    >Contact Us</a
+                >
+            </li>
+            <li class="flex mx-9">
+                <a
+                    href="tel:6785020680"
+                    class="text-slate-300 underline my-1 w-full text-center block"
+                    >(678) 502-0680</a
+                >
+            </li>
+            <li class="flex mx-9">
+                <a
+                    href="mailto:southerncomforttotalhomecare@gmail.com"
+                    class="text-slate-300 underline my-1 w-full text-center block"
+                    >Email</a
+                >
+            </li>
         </ul>
     </nav>
 </div>
-<div class="h-16 w-dvw" />
+<div class="h-16 w-full"></div>
