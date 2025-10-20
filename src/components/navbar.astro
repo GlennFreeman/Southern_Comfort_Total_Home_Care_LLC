@@ -7,8 +7,11 @@ import logojpg from "../media/logojpg.jpg";
     <input id="link-drawer" type="checkbox" class="drawer-toggle" />
     <div class="drawer-content flex flex-col">
         <!-- Navbar -->
-        <nav class="navbar bg-base-300 w-full">
-            <div class="flex-none lg:hidden">
+        <nav class="navbar justify-between bg-base-300">
+            <div class="flex">
+                <a href="./" class="font-bold text-balance">Southern Comfort Total Home Care</a>
+            </div>
+            <div class="flex-shrink lg:hidden">
                 <label
                     for="link-drawer"
                     aria-label="open sidebar"
@@ -28,10 +31,7 @@ import logojpg from "../media/logojpg.jpg";
                     </svg>
                 </label>
             </div>
-            <div class="mx-2 flex-1 px-2">
-                <a href="./">Southern Comfort Total Home Care</a>
-            </div>
-            <div class="hidden flex-none lg:block">
+            <div class="hidden flex-shrink lg:flex lg:navbar-end">
                 <ul class="menu menu-horizontal">
                     <!-- Navbar menu content here -->
                     <li>
@@ -80,4 +80,4 @@ import logojpg from "../media/logojpg.jpg";
         </ul>
     </nav>
 </div>
-<div class="h-16"></div>
+<div class="h-16 w-dvw" />

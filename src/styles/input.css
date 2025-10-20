@@ -6,7 +6,7 @@
   name: "dark";
   default: true;
   --color-primary: oklch(0.508 0.202 29.7);
-  --color-secondary: hsl(216.1 100.0% 50.0%);
+  --color-secondary: oklch(0.563 0.60218 260.818);
   --color-accent: oklch(0.315 0.107 285.8);
   --depth: 1;
   --noise: 1;
