@@ -1879,11 +1879,23 @@
   .w-full {
     width: 100%;
   }
+  .w-lvw {
+    width: 100lvw;
+  }
   .w-screen {
     width: 100vw;
   }
+  .w-svw {
+    width: 100svw;
+  }
   .max-w-md {
     max-width: var(--container-md);
+  }
+  .min-w-fit {
+    min-width: fit-content;
+  }
+  .min-w-max {
+    min-width: max-content;
   }
   .flex-auto {
     flex: auto;
