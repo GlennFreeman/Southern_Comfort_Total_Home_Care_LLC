@@ -2299,6 +2299,16 @@
       filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
     }
   }
+  .min-\[791px\]\:flex {
+    @media (width >= 791px) {
+      display: flex;
+    }
+  }
+  .min-\[791px\]\:hidden {
+    @media (width >= 791px) {
+      display: none;
+    }
+  }
   .sm\:visible {
     @media (width >= 40rem) {
       visibility: visible;
