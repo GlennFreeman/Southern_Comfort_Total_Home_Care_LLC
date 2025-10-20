@@ -5,19 +5,23 @@ import hero from "../media/hero.jpg";
 <div class="hero min-h-screen" style={`background-image: url(${hero.src});`} ;>
     <div class="hero-overlay"></div>
     <div class="hero-content text-neutral-content text-center glass rounded-lg">
-        <div
-            class="max-w-md p-4 border-2 border-gray-400 border-dashed rounded-lg"
-        >
-            <h1
-                class="text-6xl font-bold font-serif text-primary drop-shadow-2xl"
-            >
-                Southern Comfort
-            </h1>
-            <h2
-                class="text-2xl font-sans font-normal text-accent italic tracking-widest mb-3 mt-1"
-            >
-                Total Home Care
-            </h2>
+        <div class="max-w-md p-4 rounded-lg">
+            <div class="bg-yellow-950 rounded-lg drop-shadow-xl shadow-xl p-3 mb-4">
+                <div
+                    class="rounded-lg border-2 border-dashed border-red-950 pt-2 pb-1"
+                >
+                    <h1
+                        class="text-6xl font-bold font-serif text-primary/75 drop-shadow-lg"
+                    >
+                        Southern Comfort
+                    </h1>
+                    <h2
+                        class="text-2xl font-sans font-medium text-white/25 italic tracking-widest mb-3 mt-1"
+                    >
+                        Total Home Care
+                    </h2>
+                </div>
+            </div>
             <p class="text-pretty">
                 Welcome to Southern Comfort Total Home Care. We are here to
                 provide our customers with top notch handyman services,
@@ -38,12 +42,22 @@ import hero from "../media/hero.jpg";
         --glass-blur: 4px;
         --glass-opacity: 15%;
     }
+    .bg-yellow-950 {
+        background-color: #422006;
+        background-image: url("https://www.transparenttextures.com/patterns/leather.png");
+    }
     h1 {
         text-shadow:
-            0 -1px 1px rgba(245, 245, 255, 0.65),
-            0 2px 5px rgba(0, 0, 0, 0.55);
+            0 -1px 1px rgba(255, 245, 245, 0.15),
+            0 3px 3px rgba(255, 235, 235, 0.25),
+            0 -3px 3px rgba(40, 0, 0, 0.75),
+            0 0 6px rgba(0, 0, 0, 1);
     }
     h2 {
-        text-shadow: 0 -1px 3px rgba(245, 245, 255, 0.45);
+        text-shadow:
+            0 -1px 1px rgba(245, 245, 255, 0.15),
+            0 2px 2px rgba(245, 245, 255, 0.25),
+            0 -2px 2px rgba(0, 0, 0, 0.75),
+            0 0 4px rgba(0, 0, 0, 1);
     }
 </style>
