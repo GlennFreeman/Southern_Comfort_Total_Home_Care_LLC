@@ -2019,6 +2019,9 @@
   .text-primary {
     color: var(--color-primary);
   }
+  .text-primary-content {
+    color: var(--color-primary-content);
+  }
   .text-slate-100 {
     color: var(--color-slate-100);
   }
