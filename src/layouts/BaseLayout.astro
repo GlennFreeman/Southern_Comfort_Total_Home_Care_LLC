@@ -13,10 +13,10 @@ const { title = "Astro + Tailwind v4" } = Astro.props;
     <link rel="stylesheet" href="/tailwind.css" />
   </head>
   <body
-    class="bg-slate-900 text-primary-content min-h-screen flex-col items-center justify-center"
+    class="bg-slate-900 text-primary-content min-w-fit min-h-screen flex-col items-center justify-center"
   >
     <Navbar />
-    <main>
+    <main class="w-full">
       <slot />
     </main>
     <Footer />

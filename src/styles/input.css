@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&family=Pattaya&display=swap');
 @import "tailwindcss";
 @plugin "daisyui" {
   themes: dark --default;
@@ -8,6 +9,11 @@
   --color-primary: oklch(0.508 0.202 29.7);
   --color-secondary: oklch(0.563 0.60218 260.818);
   --color-accent: oklch(0.315 0.107 285.8);
+  --color-accent-content: oklch(0.94 0.028 342.258);
   --depth: 1;
   --noise: 1;
+}
+@theme {
+  --font-hero-h1: "Pattaya", serif;
+  --font-hero-h2: "Lexend Giga", sans-serif;
 }
