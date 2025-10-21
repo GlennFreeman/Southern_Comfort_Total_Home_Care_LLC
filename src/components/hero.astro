@@ -16,7 +16,7 @@ const optimizedLeather = await getImage({ src: leather, format: "webp" });
     <div
         class="hero-content text-neutral-content text-center glass rounded-2xl"
     >
-        <div class="max-w-md p-4">
+        <div class="max-w-lg p-4">
             <div
                 class="rounded-2xl bg-yellow-950 ring-3 ring-orange-950 outline-2 outline-dashed outline-gray-400 -outline-offset-8 drop-shadow-xl shadow-xl py-6 mb-5"
                 style={`background-image: url(${optimizedLeather.src})`}
@@ -54,14 +54,12 @@ const optimizedLeather = await getImage({ src: leather, format: "webp" });
     }
     h1 {
         text-shadow:
-            0 -1px 1px rgba(255, 245, 245, 0.15),
             0 3px 3px rgba(255, 235, 235, 0.25),
             0 -3px 3px rgba(40, 0, 0, 0.75),
-            0 0 6px rgba(0, 0, 0, 1);
+            0 0 6px rgba(0, 0, 0, .33);
     }
     h2 {
         text-shadow:
-            0 -1px 1px rgba(245, 245, 255, 0.15),
             0 2px 2px rgba(245, 245, 255, 0.25),
             0 -2px 2px rgba(0, 0, 0, 0.75),
             0 0 4px rgba(0, 0, 0, 1);
