@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&family=Rowdies:wght@300;400;700&display=swap');
 @import "tailwindcss";
 @plugin "daisyui" {
   themes: dark --default;
@@ -11,4 +12,8 @@
   --color-accent-content: oklch(0.94 0.028 342.258);
   --depth: 1;
   --noise: 1;
+}
+@theme {
+  --font-hero-h1: "Rowdies", serif;
+  --font-hero-h2: "Lexend Giga", sans-serif;
 }
