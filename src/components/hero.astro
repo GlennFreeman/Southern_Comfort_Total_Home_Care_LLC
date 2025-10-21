@@ -1,8 +1,14 @@
 ---
+import { getImage } from "astro:assets";
 import hero from "../media/hero.jpg";
+import leather from "../media/leather.png"
+
+const optimizedHero = await getImage({src: hero, format: 'webp'})
+const optimizedLeather = await getImage({src: leather, format: 'webp'})
+
 ---
 
-<div class="hero min-h-screen" style={`background-image: url(${hero.src});`} ;>
+<div class="hero min-h-screen" style={`background-image: url(${optimizedHero.src});`} ;>
     <div class="hero-overlay"></div>
     <div
         class="hero-content text-neutral-content text-center glass rounded-2xl"
@@ -10,7 +16,8 @@ import hero from "../media/hero.jpg";
         <div class="max-w-md p-4">
             <div
                 class="rounded-2xl bg-yellow-950 ring-3 ring-orange-950 outline-2 outline-dashed outline-gray-400 -outline-offset-8 drop-shadow-xl shadow-xl py-6 mb-5"
-            >
+                style={`background-image: url(${optimizedLeather.src})`}
+                >
                 <h1
                     class="text-6xl font-bold font-serif text-accent/50 brightness-50 drop-shadow-lg"
                 >
@@ -41,10 +48,6 @@ import hero from "../media/hero.jpg";
     .glass {
         --glass-blur: 4px;
         --glass-opacity: 15%;
-    }
-    .bg-yellow-950 {
-        background-color: #422006;
-        background-image: url("https://www.transparenttextures.com/patterns/leather.png");
     }
     h1 {
         text-shadow:
