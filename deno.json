@@ -3,7 +3,7 @@
     "css": "./tailwindcss.exe -i ./src/styles/input.css -o ./public/tailwind.css --watch",
     "astro:dev": "deno run -A npm:astro dev",
     "astro:build": "deno run -A npm:astro build",
-    "deploy": "deno run -A npm:gh-pages@latest -d dist",
+    "deploy": "deno run -A npm:gh-pages@latest -d dist --nojekyll",
     "publish": "deno task astro:build && deno task deploy",
     "dev": "deno task css & deno task astro:dev"
   }
