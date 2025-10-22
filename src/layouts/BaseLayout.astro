@@ -2,6 +2,7 @@
 import Navbar from "../components/navbar.astro";
 import Footer from "../components/footer.astro";
 const { title = "Astro + Tailwind v4" } = Astro.props;
+const base = Astro.site?.pathname || "/";
 ---
 
 <!doctype html>
@@ -11,6 +12,7 @@ const { title = "Astro + Tailwind v4" } = Astro.props;
     <meta name="viewport" content="width=device-width" />
     <title>{title}</title>
     <link rel="stylesheet" href="tailwind.css" />
+    <link rel="icon" href={`${base}favicon.ico`} type="image/x-icon" />
   </head>
   <body
     class="bg-slate-900 text-primary-content min-w-fit min-h-screen flex-col items-center justify-center"
