@@ -1,6 +1,8 @@
 # tailwindcss
 tailwindcss.exe
 
+dist/
+
 # generated types
 .astro/
 
