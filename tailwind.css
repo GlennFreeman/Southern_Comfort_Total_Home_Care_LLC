@@ -1966,6 +1966,9 @@
   .gap-10 {
     gap: calc(var(--spacing) * 10);
   }
+  .scroll-smooth {
+    scroll-behavior: smooth;
+  }
   .rounded {
     border-radius: 0.25rem;
   }
