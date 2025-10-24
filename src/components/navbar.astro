@@ -9,7 +9,9 @@ import logojpg from "../media/logojpg.jpg";
         <!-- Navbar -->
         <nav class="navbar justify-between bg-base-300 h-16">
             <div class="flex">
-                <a href="./" class="btn btn-ghost flex justify-center items-center text-balance "
+                <a
+                    href="#home"
+                    class="btn btn-ghost flex justify-center items-center text-balance"
                     ><span class="font-serif font-bold text-primary"
                         >Southern Comfort</span
                     >
@@ -42,7 +44,10 @@ import logojpg from "../media/logojpg.jpg";
                 <ul class="menu menu-horizontal justify-center items-center">
                     <!-- Navbar menu content here -->
                     <li>
-                        <a class="tooltip tooltip-bottom" data-tip="Home"
+                        <a
+                            href="#home"
+                            class="tooltip tooltip-bottom"
+                            data-tip="Home"
                             ><Image
                                 src={logojpg}
                                 alt="logo and home link"
@@ -51,10 +56,10 @@ import logojpg from "../media/logojpg.jpg";
                             /></a
                         >
                     </li>
-                    <li><a>Services</a></li>
-                    <li><a>Service Area</a></li>
-                    <li><a>About Us</a></li>
-                    <li><a>Contact Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#servicearea">Service Area</a></li>
+                    <li><a href="#aboutus">About Us</a></li>
+                    <li><a href="#contactus">Contact Us</a></li>
                     <li>
                         <a
                             href="tel:6785020680"
@@ -111,7 +116,7 @@ import logojpg from "../media/logojpg.jpg";
         >
             <!-- Sidebar content here -->
             <li>
-                <a class="tooltip tooltip-bottom" data-tip="Home"
+                <a href="#home" class="tooltip tooltip-bottom" data-tip="Home"
                     ><Image
                         src={logojpg}
                         alt="logo and home link"
@@ -121,12 +126,13 @@ import logojpg from "../media/logojpg.jpg";
                 >
             </li>
             <div class="divider px-6"></div>
-            <li class="text-slate-300 px-8"><a>Services</a></li>
-            <li class="text-slate-300 px-8"><a>Service Area</a></li>
-            <li class="text-slate-300 px-8"><a>About Us</a></li>
+            <li class="text-slate-300 px-8"><a href="#services">Services</a></li>
+            <li class="text-slate-300 px-8"><a href="#servicearea">Service Area</a></li>
+            <li class="text-slate-300 px-8"><a href="#aboutus">About Us</a></li>
             <div class="divider px-6"></div>
             <li class="px-8">
                 <a
+                    href="#contactus"
                     class="btn btn-secondary rounded-full font-bold px-8 mb-2 animate-pulse hover:pb-0.75 hover:saturate-200 hover:animate-none focus:pb-0.75 focus:saturate-200 focus:animate-none active:saturate-50 active:animate-none"
                     >Contact Us</a
                 >
