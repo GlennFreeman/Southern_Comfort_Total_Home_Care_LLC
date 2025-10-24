@@ -1,24 +1,86 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Hero from "../components/hero.astro";
+import Card from "../components/card.astro";
 ---
 
 <BaseLayout title="Southern Comfort Total Home Care | Handyman Services">
 	<Hero />
-	<article class="flex-col items-center justify-center mx-auto px-[calc(0.5rem+5vw)]">
-		<h3 class="text-slate-300 text-4xl font-semibold text-pretty mt-8 mb-2">Service Area</h3>
-		<p class="text-slate-300 text-pretty text-lg">
+	<article
+		class="flex-col items-center justify-center mx-auto my-5 px-[calc(0.5rem+5vw)]"
+	>
+		<h3
+			id="services"
+			class="text-4xl font-semibold text-pretty text-center p-5"
+		>
+			Services
+		</h3>
+		<section class="flex flex-wrap items-center justify-center gap-5">
+			<Card
+				title="🛠 Home Repairs"
+				content="From leaky faucets to broken door frames, we take care of the everyday fixes that keep your home running smoothly. Whether it's a quick repair or troubleshooting a tricky issue, we'll handle it with care and get things back in shape fast."
+			/>
+			<Card
+				title="🪚 Carpentry"
+				content="Need custom shelving, trim work, or deck repairs? We offer quality carpentry that combines craftsmanship and practicality. From small wood repairs to larger builds, we'll make sure your project looks great and lasts for years."
+			/>
+			<Card
+				title="🎨 Painting"
+				content="A fresh coat of paint can completely transform a space. We handle interior and exterior painting with precision — from careful prep work to smooth, even finishes. We use quality materials so your home looks its best inside and out."
+			/>
+			<Card
+				title="🚰 Plumbing"
+				content="Drips, clogs, and leaks don't stand a chance. We take care of minor plumbing repairs, fixture replacements, and maintenance to keep your water flowing properly. Reliable work that prevents bigger problems down the road."
+			/>
+			<Card
+				title="⚡ Electrical"
+				content="From installing new light fixtures to troubleshooting outlets and switches, we handle basic electrical needs safely and professionally. We make sure everything's up to code — and that your home stays bright and functional."
+			/>
+			<Card
+				title="🏡 Remodeling"
+				content="Ready to upgrade a room or give your home a fresh look? We offer remodeling services that fit your style, budget, and schedule. Whether it's a kitchen facelift, bathroom update, or a full-room transformation, we'll help bring your vision to life."
+			/>
+		</section>
+		<h3
+			id="servicearea"
+			class="text-slate-300 text-4xl font-semibold text-pretty mt-8 mb-2"
+		>
+			Service Area
+		</h3>
+		<p class="text-slate-300 text-balance text-lg">
 			Our service area includes: Carroll County, GA · Douglas County, GA ·
 			Douglasville, GA · Paulding County, GA · Haralson County, GA ·
 			Rockmart, GA · Dallas, GA · Hiram, GA · Polk County, GA · Cedartown,
 			GA
 		</p>
-		<h3 class="text-4xl font-semibold text-pretty mt-8 mb-2">Lorem Ipsum</h3>
+		<h3 class="text-4xl font-semibold text-balance mt-8 mb-2">
+			Lorem Ipsum
+		</h3>
 		<p class="text-pretty text-lg">
 			Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque nulla
 			et rem vel, quisquam reiciendis modi asperiores mollitia a, aliquid
 			labore consectetur tenetur? Nulla, vero! Enim vitae illo laborum
 			iusto?
+		</p>
+		<h3 id="aboutus" class="text-4xl font-semibold text-pretty mt-8 mb-2">
+			About Us
+		</h3>
+		<p class="text-pretty text-lg">
+			Hi there! I'm Brandon Jordan, the owner of Southern Comfort Total
+			Home Care, proudly serving families across West Georgia. I started
+			this business in 2023 with one simple goal — to provide honest,
+			high-quality home repair and improvement services while supporting
+			my own family — my wife and our son. At Southern Comfort, we handle
+			just about everything your home needs — from repairs, carpentry, and
+			painting to plumbing, electrical work, and remodeling projects. No
+			job is too small, and every job gets the same care and attention to
+			detail. What makes us different is the personal touch we bring to
+			every project. We treat your home like it's our own and believe that
+			good business is built on relationships, not transactions. That
+			means fair pricing, reliable service, and a satisfaction guarantee
+			you can count on. When you call Southern Comfort, you're not dealing
+			with a big company — you're working with a neighbor who genuinely
+			cares about your home and your comfort.
 		</p>
 	</article>
 </BaseLayout>

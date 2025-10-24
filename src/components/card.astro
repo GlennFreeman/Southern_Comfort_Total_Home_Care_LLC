@@ -1,0 +1,21 @@
+---
+import { Image } from "astro:assets";
+import logojpg from "../media/logojpg.jpg";
+const { image = logojpg } = Astro.props;
+const { title = "Set a Title" } = Astro.props;
+const { content = "Set the content" } = Astro.props;
+---
+
+<div class="card lg:h-96 lg:card-side bg-base-100 shadow-sm">
+    <figure>
+        <Image
+            src={image}
+            alt="card image"
+            class="object-cover w-full min-[791px]:w-80 lg:w-60"
+        />
+    </figure>
+    <div class="card-body w-full min-[791px]:w-80 lg:w-70">
+        <h2 class="card-title text-nowrap text-2xl text-center">{title}</h2>
+        <p class="text-lg text-pretty">{content}</p>
+    </div>
+</div>
