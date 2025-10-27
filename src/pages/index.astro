@@ -2,6 +2,7 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Hero from "../components/hero.astro";
 import Card from "../components/card.astro";
+import CardHolder from "../components/card_holder.astro";
 ---
 
 <BaseLayout title="Southern Comfort Total Home Care | Handyman Services">
@@ -15,7 +16,7 @@ import Card from "../components/card.astro";
 		>
 			Services
 		</h3>
-		<section class="flex flex-wrap items-center justify-center gap-5">
+		<CardHolder>
 			<Card
 				title="🛠 Home Repairs"
 				content="From leaky faucets to broken door frames, we take care of the everyday fixes that keep your home running smoothly. Whether it's a quick repair or troubleshooting a tricky issue, we'll handle it with care and get things back in shape fast."
@@ -40,7 +41,7 @@ import Card from "../components/card.astro";
 				title="🏡 Remodeling"
 				content="Ready to upgrade a room or give your home a fresh look? We offer remodeling services that fit your style, budget, and schedule. Whether it's a kitchen facelift, bathroom update, or a full-room transformation, we'll help bring your vision to life."
 			/>
-		</section>
+		</CardHolder>
 		<h3
 			id="servicearea"
 			class="text-slate-300 text-4xl font-semibold text-pretty mt-8 mb-2"
