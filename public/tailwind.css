@@ -1784,6 +1784,12 @@
   .h-16 {
     height: calc(var(--spacing) * 16);
   }
+  .max-h-\[85dvh\] {
+    max-height: 85dvh;
+  }
+  .max-h-\[90dvh\] {
+    max-height: 90dvh;
+  }
   .min-h-full {
     min-height: 100%;
   }
