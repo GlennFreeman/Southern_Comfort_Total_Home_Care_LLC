@@ -25,7 +25,11 @@ const { content = "Set the content" } = Astro.props;
     </div>
 </div>
 <style scoped>
-    :global(.card-holder) .card:hover{
+    .my-card {
+        font-family: "Noto Color Emoji", sans-serif;
+    }
+
+    :global(.card-holder) .my-card:hover {
         transform: scale(1.025);
         box-shadow:
             0 0 1rem rgba(0, 0, 0, 0.75),
@@ -35,7 +39,7 @@ const { content = "Set the content" } = Astro.props;
         transition-delay: 0s;
     }
 
-    :global(.card-holder:has(.my-card:hover)) .card:not(:hover) {
+    :global(.card-holder:has(.my-card:hover)) .my-card:not(:hover) {
         filter: brightness(0.85);
         transform: scale(0.95);
         opacity: 0.65;
