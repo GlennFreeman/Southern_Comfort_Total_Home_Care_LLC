@@ -3,6 +3,13 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import Hero from "../components/hero.astro";
 import Card from "../components/card.astro";
 import CardHolder from "../components/card_holder.astro";
+
+import phHomeRepair from "../media/ph-home_repair.png"
+import phCarpentry from "../media/ph-carpentry.jpg"
+import phPainting from "../media/ph-painting.webp"
+import phPlumbing from "../media/ph-plumbing.avif"
+import phElectrical from "../media/ph-electrical.jpg"
+import phRemodeling from "../media/ph-remodeling.png"
 ---
 
 <BaseLayout title="Southern Comfort Total Home Care | Handyman Services">
@@ -18,26 +25,32 @@ import CardHolder from "../components/card_holder.astro";
 		</h3>
 		<CardHolder>
 			<Card
+				image={phHomeRepair}
 				title="🛠 Home Repairs"
 				content="From leaky faucets to broken door frames, we take care of the everyday fixes that keep your home running smoothly. Whether it's a quick repair or troubleshooting a tricky issue, we'll handle it with care and get things back in shape fast."
 			/>
 			<Card
+				image={phCarpentry}
 				title="🪚 Carpentry"
 				content="Need custom shelving, trim work, or deck repairs? We offer quality carpentry that combines craftsmanship and practicality. From small wood repairs to larger builds, we'll make sure your project looks great and lasts for years."
 			/>
 			<Card
+				image={phPainting}
 				title="🎨 Painting"
 				content="A fresh coat of paint can completely transform a space. We handle interior and exterior painting with precision — from careful prep work to smooth, even finishes. We use quality materials so your home looks its best inside and out."
 			/>
 			<Card
+				image={phPlumbing}
 				title="🚰 Plumbing"
 				content="Drips, clogs, and leaks don't stand a chance. We take care of minor plumbing repairs, fixture replacements, and maintenance to keep your water flowing properly. Reliable work that prevents bigger problems down the road."
 			/>
 			<Card
+				image={phElectrical}
 				title="⚡ Electrical"
 				content="From installing new light fixtures to troubleshooting outlets and switches, we handle basic electrical needs safely and professionally. We make sure everything's up to code — and that your home stays bright and functional."
 			/>
 			<Card
+				image={phRemodeling}
 				title="🏡 Remodeling"
 				content="Ready to upgrade a room or give your home a fresh look? We offer remodeling services that fit your style, budget, and schedule. Whether it's a kitchen facelift, bathroom update, or a full-room transformation, we'll help bring your vision to life."
 			/>

@@ -3,6 +3,7 @@ tailwindcss.exe
 
 dist/
 _raw_assests/
+src/media/ph-*
 
 # generated types
 .astro/
