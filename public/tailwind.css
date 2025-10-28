@@ -1811,6 +1811,9 @@
   .w-60 {
     width: calc(var(--spacing) * 60);
   }
+  .w-dvw {
+    width: 100dvw;
+  }
   .w-full {
     width: 100%;
   }
@@ -1974,6 +1977,9 @@
   }
   .stroke-current {
     stroke: currentcolor;
+  }
+  .object-contain {
+    object-fit: contain;
   }
   .object-cover {
     object-fit: cover;
