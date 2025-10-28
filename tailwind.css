@@ -1721,6 +1721,16 @@
       width: calc(var(--spacing) * 50);
     }
   }
+  .min-\[791px\]\:w-60 {
+    @media (width >= 791px) {
+      width: calc(var(--spacing) * 60);
+    }
+  }
+  .min-\[791px\]\:w-70 {
+    @media (width >= 791px) {
+      width: calc(var(--spacing) * 70);
+    }
+  }
   .min-\[791px\]\:w-\[80dvw\] {
     @media (width >= 791px) {
       width: 80dvw;
