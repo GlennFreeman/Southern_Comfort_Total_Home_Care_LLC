@@ -11,12 +11,12 @@ const { content = "Set the content" } = Astro.props;
 <div
     class="card my-card flex-grow max-h-[85dvh] max-[791px]:h-120 max-[1204px]:h-64 min-[1204px]:h-96 min-[791px]:w-[80dvw] lg:w-[32.5rem] min-[791px]:card-side bg-base-100 shadow-lg border-1 border-slate-900 hover:sm:-translate-y-3 hover:border-slate-700 -border-spacing-1 transition delay-[50] duration-150 ease-in-out"
 >
-    <figure class="w-full">
+    <figure class="w-full min-[791px]:w-60">
         <Image
             src={image}
             alt="card"
             loading={"lazy"}
-            class="object-cover min-[791px]:w-60"
+            class="object-cover"
         />
     </figure>
     <div class="card-body min-[791px]:w-70">
