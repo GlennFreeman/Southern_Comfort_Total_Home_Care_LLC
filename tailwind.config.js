@@ -1,5 +1,8 @@
 export default {
   content: ["./src/**/*.{astro,html,js,ts}"],
+  future: {
+    hoverOnlyWhenSupported: true,
+  },
   theme: {
     extend: {
       colors: {
