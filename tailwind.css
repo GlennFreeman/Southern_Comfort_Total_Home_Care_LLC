@@ -37,6 +37,7 @@
     --radius-2xl: 1rem;
     --drop-shadow-lg: 0 4px 4px rgb(0 0 0 / 0.15);
     --drop-shadow-xl: 0 9px 7px rgb(0 0 0 / 0.1);
+    --ease-out: cubic-bezier(0, 0, 0.2, 1);
     --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
     --animate-pulse: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
     --default-transition-duration: 150ms;
@@ -1561,6 +1562,16 @@
       filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
     }
   }
+  .max-\[1204px\]\:h-64 {
+    @media (width < 1204px) {
+      height: calc(var(--spacing) * 64);
+    }
+  }
+  .max-\[791px\]\:h-120 {
+    @media (width < 791px) {
+      height: calc(var(--spacing) * 120);
+    }
+  }
   .max-lg\:tooltip {
     @media (width < 64rem) {
       @layer daisyui.component {
@@ -1711,16 +1722,6 @@
       }
     }
   }
-  .min-\[791px\]\:h-64 {
-    @media (width >= 791px) {
-      height: calc(var(--spacing) * 64);
-    }
-  }
-  .min-\[791px\]\:w-50 {
-    @media (width >= 791px) {
-      width: calc(var(--spacing) * 50);
-    }
-  }
   .min-\[791px\]\:w-60 {
     @media (width >= 791px) {
       width: calc(var(--spacing) * 60);
@@ -1736,9 +1737,9 @@
       width: 80dvw;
     }
   }
-  .min-\[791px\]\:w-fit {
-    @media (width >= 791px) {
-      width: fit-content;
+  .min-\[1204px\]\:h-96 {
+    @media (width >= 1204px) {
+      height: calc(var(--spacing) * 96);
     }
   }
   .hover\:sm\:-translate-y-3 {
@@ -1754,21 +1755,6 @@
   .lg\:flex {
     @media (width >= 64rem) {
       display: flex;
-    }
-  }
-  .lg\:h-96 {
-    @media (width >= 64rem) {
-      height: calc(var(--spacing) * 96);
-    }
-  }
-  .lg\:w-60 {
-    @media (width >= 64rem) {
-      width: calc(var(--spacing) * 60);
-    }
-  }
-  .lg\:w-70 {
-    @media (width >= 64rem) {
-      width: calc(var(--spacing) * 70);
     }
   }
   .lg\:w-\[32\.5rem\] {
