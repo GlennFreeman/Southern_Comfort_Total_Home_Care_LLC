@@ -2,6 +2,7 @@
 tailwindcss.exe
 
 dist/
+_raw_assests/
 
 # generated types
 .astro/
