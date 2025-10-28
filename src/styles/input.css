@@ -14,6 +14,6 @@
   --noise: 1;
 }
 @theme {
-  --font-hero-h1: "Pattaya", serif, "Noto Color Emoji";
-  --font-hero-h2: "Lexend Giga", sans-serif, "Noto Color Emoji";
+  --font-hero-h1: "Noto Color Emoji", "Pattaya", serif;
+  --font-hero-h2: "Noto Color Emoji", "Lexend Giga", sans-serif;
 }
